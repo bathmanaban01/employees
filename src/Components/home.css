@@ -1,0 +1,192 @@
+/* Page layout */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #00cec9;
+  margin-bottom: 30px;
+}
+
+/* Two-column layout */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Left side - details box */
+.details-box {
+  flex: 1;
+  background: #1e272e;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.details-box h2 {
+  text-align: center;
+  color: #81ecec;
+  margin-bottom: 20px;
+}
+
+.details-box p {
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Right side - form */
+.form-container {
+  flex: 1;
+  background: #1e272e;
+  border-radius: 10px;
+  padding: 20px;
+  height: 500px;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #81ecec;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 80%;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #dfe6e9;
+}
+
+.input-group input {
+  padding: 10px;
+  border-radius: 25px;
+  margin-left: 25%;
+  border: none;
+  outline: none;
+    
+  text-align: center;
+}
+.input-group input:hover {
+  border: 3px solid rgb(43, 208, 226);
+  transform: scale(1.05);   /* instead of zoom */
+  transition:  0.1s ease; /* smoother hover animation */
+}
+
+
+.sub-btn {
+  width: 30%;
+  padding: 12px;
+  background: #00b894;
+  border: none;
+  border-radius: 35px;
+  
+  margin-left: 35%;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.edit-btn{
+  width: 25%;
+  padding: 12px;
+  background: #00b894;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-right: 80px;
+  margin-left: 40px;
+
+}
+.delete-btn{
+    width: 25%;
+  padding: 12px;
+  background: #eb0d41;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.delete-btn:hover{
+    background-color: #8d1531;
+
+}
+
+
+
+button:hover {
+  background: #019874;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column;
+  }
+}
+.employee-card {
+  background: #2f3640;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.employee-card p {
+  margin: 6px 0;
+  font-size: 15px;
+  margin-left: 20px;
+  
+  
+}
+.employee-card strong{
+    
+    font-weight: 600;
+    margin-right: 10px;
+
+}
+
+.employee-card hr {
+  margin-top: 10px;
+  border: 0.5px solid #444;
+}
+
+.search-bar {
+  width: 28%;
+  height: 30px;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-left: 100px;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search-bar:hover{
+    border: 3px solid #007bff;
+}
